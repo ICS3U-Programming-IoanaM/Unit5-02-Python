@@ -3,15 +3,15 @@
 # Created By: Ioana Marinescu
 
 # Date: Dec. 4, 2022
-# a program that calculates the area of a rectangle or square
+# a program that calculates the area of a triangle
 
 
 def calc_area(base, height):
     # calculates the area
-    area = base * height
+    area = (base * height) / 2
 
     # prints results
-    print(f"The area is {area}cm^2.")
+    print(f"The area is {area:.2}cm^2.")
 
 
 def main():
