@@ -11,7 +11,7 @@ def calc_area(base, height):
     area = (base * height) / 2
 
     # prints results
-    print(f"The area is {area:.2}cm^2.")
+    print(f"The area is {area:.3}cm^2.")
 
 
 def main():
@@ -23,19 +23,19 @@ def main():
 
     # exception handling
     try:
-        base_int = int(base_str)
-        height_int = int(height_str)
+        base_fl = float(base_str)
+        height_fl = float(height_str)
 
     except Exception:
         print("Invalid Input! Please enter positive integer.")
 
     else:
-        if base_int <= 0 or height_int <= 0:
+        if base_fl <= 0 or height_fl <= 0:
             print("Invalid Input! Please enter positive integer.")
 
         else:
             # calls function to calculate the area
-            calc_area(base_int, height_int)
+            calc_area(base_fl, height_fl)
 
 
 if __name__ == "__main__":
