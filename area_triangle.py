@@ -11,7 +11,7 @@ def calc_area(base, height):
     area = (base * height) / 2
 
     # prints results
-    print(f"The area is {area:.3}cm^2.")
+    print(f"The area is {area:.2f}cm^2.")
 
 
 def main():
